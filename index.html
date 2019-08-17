@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>fantasyRandomizer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css" type="text/css" />
+        <!-- <script language="JavaScript" src="../js/test.js" ></script> -->
+        <script language="JavaScript" src="./js/randomizer.js" ></script>
+        <script language="JavaScript" src="./js/validation.js" ></script>
+    </head>
+    <body>
+        <div class="core">
+            
+            <div class="splash">
+                <div class="headline">
+                    <h1>FANTASY FOOTBALL <br> DIVISION RANDOMIZER</h1>
+                </div>
+                <div class="details">
+                    <p><strong>USE</strong> | Randomly assign a list of team or manager names to one of two divisions</p>
+                    <p><strong>VER</strong> | 1.1</p>
+                    <p><strong>PUB</strong> | 8.17.19</p>
+                </div>
+            </div>
+           
+            <br>
+            
+            <div class="directions">
+                <h2>HOW</h2>
+                <ol>
+                    <li>Enter Names into text box below and click 'RUN'</li>
+                    <li>Javascript combines inputs into an arary</li>
+                    <li>Array is then randomized via the <a href= "https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle" >Fisher-Yates Shuffle</a></li>
+                    <li>After randomized, a helper function splits into two groups</li>
+                    <li>results are displayed as output</li>
+                </ol>
+            
+            <br>
+            
+            <p><em>Note: this is only designed to split into two divisions. An additional function would need to be added to take in a variable amount of divisions in the future.</em></p>
+            </div>
+
+            <br>
+    
+            <div class="form">
+                <form id='names'>
+                    <input type="text" name="data" value="Write the team or manager names here (comma separated). For example: team1,team2,team3,etc..." id="data" onclick="this.value=''"><br>
+                    <!-- <input type="submit" value="RUN" onclick='test(this.form.data.value);return false;'> -->
+                    <!-- <input type="submit" value="RUN" onclick='printResults(this.form.data.value);return false;'> -->
+                    <input type="submit" value="RUN" onclick='printResults(this.form.data.value);return false;'>
+                </form>
+                <br>
+            </div>
+            <div id="output" class="output">
+    
+
+            </div>
+        </div>
+    </body>
+</html>

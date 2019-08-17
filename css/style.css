@@ -1,0 +1,28 @@
+* {
+    margin: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    color: #202020;
+    background-color: #F0F0F0;
+  }
+
+h1 {
+    font-size: 400%;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: white
+  }
+
+em {
+    color: #C0C0C0;
+}
+
+output {
+    background-color: #202020;
+    color: white;
+}
